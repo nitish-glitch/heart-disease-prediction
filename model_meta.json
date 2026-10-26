@@ -1,0 +1,82 @@
+{
+    "best_model_name": "Logistic Regression",
+    "best_params": {
+        "C": "0.05",
+        "solver": "liblinear"
+    },
+    "cv_accuracy": 84.83,
+    "test_accuracy": 85.0,
+    "precision": 88.0,
+    "recall": 78.57,
+    "f1_score": 83.02,
+    "confusion_matrix": [
+        [
+            29,
+            3
+        ],
+        [
+            6,
+            22
+        ]
+    ],
+    "baseline_cv_scores": {
+        "Logistic Regression": 82.47,
+        "Random Forest": 81.47,
+        "K-Nearest Neighbors": 81.14
+    },
+    "comparison_table": {
+        "Logistic Regression": {
+            "baseline_cv": 82.47,
+            "tuned_cv": 84.83,
+            "test_accuracy": 85.0,
+            "precision": 88.0,
+            "recall": 78.57,
+            "f1_score": 83.02,
+            "best_params": {
+                "C": "0.05",
+                "solver": "liblinear"
+            }
+        },
+        "Random Forest": {
+            "baseline_cv": 81.47,
+            "tuned_cv": 83.82,
+            "test_accuracy": 83.33,
+            "precision": 90.91,
+            "recall": 71.43,
+            "f1_score": 80.0,
+            "best_params": {
+                "max_depth": "3",
+                "min_samples_split": "2",
+                "n_estimators": "200"
+            }
+        },
+        "K-Nearest Neighbors": {
+            "baseline_cv": 81.14,
+            "tuned_cv": 82.47,
+            "test_accuracy": 86.67,
+            "precision": 88.46,
+            "recall": 82.14,
+            "f1_score": 85.19,
+            "best_params": {
+                "metric": "euclidean",
+                "n_neighbors": "13",
+                "weights": "distance"
+            }
+        }
+    },
+    "feature_names": [
+        "age",
+        "sex",
+        "cp",
+        "trestbps",
+        "chol",
+        "fbs",
+        "restecg",
+        "thalach",
+        "exang",
+        "oldpeak",
+        "slope",
+        "ca",
+        "thal"
+    ]
+}

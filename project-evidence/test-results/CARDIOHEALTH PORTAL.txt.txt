@@ -1,0 +1,46 @@
+CARDIOHEALTH PORTAL
+Automated Test Results
+
+Project: Heart Disease Risk Prediction & Clinical Decision Support System
+Test Script: test_predictions.py
+
+1. INPUT VALIDATION TESTS
+
+Test 1: Age = 911
+Expected: Reject invalid age
+Result: PASSED
+
+Test 2: Age = -5
+Expected: Reject negative age
+Result: PASSED
+
+Test 3: Blood Pressure = 500
+Expected: Reject out-of-range blood pressure
+Result: PASSED
+
+Test 4: Valid Patient Profile
+Expected: Accept valid input
+Result: PASSED
+
+2. SAMPLE MODEL SCENARIO TESTS
+
+Scenario A: High-Risk Example
+Predicted Class: 1 (Higher Risk)
+Model Score: 98.6%
+Result: PASSED
+
+Scenario B: Low-Risk Example
+Predicted Class: 0 (Low Risk)
+Model Score: 3.6%
+Result: PASSED
+
+Scenario C: Borderline Example
+Predicted Class: 0 (Low Risk)
+Model Score: 44.6%
+Result: PASSED
+
+OVERALL RESULT
+
+All tests in the displayed test suite passed successfully.
+
+Note: These are software test results using example profiles. They do not establish clinical validity or guarantee an individual's actual disease risk.
